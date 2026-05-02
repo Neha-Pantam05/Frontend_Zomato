@@ -28,7 +28,7 @@ const Home = () => {
 
   const toggleLike = async (id) => {
     try {
-      await axios.post("http://localhost:3000/api/food/like", { foodId: id }, {
+      await axios.post("https://backend-zomato.onrender.com/api/food/like", { foodId: id }, {
         withCredentials: true,
       });
       setLikedItems((prev) => ({
@@ -42,7 +42,7 @@ const Home = () => {
 
   const toggleSave = async (id) => {
     try {
-      await axios.post("http://localhost:3000/api/food/save", { foodId: id }, {
+      await axios.post("https://backend-zomato.onrender.com/api/food/save", { foodId: id }, {
         withCredentials: true,
       });
       setSavedItems((prev) => ({
@@ -56,7 +56,7 @@ const Home = () => {
 
   const toggleShare = async (id) => {
     try {
-      const response = await axios.get(`http://localhost:3000/api/food/share/${id}`, {
+      const response = await axios.get(`https://backend-zomato.onrender.com/api/food/share/${id}`, {
         withCredentials: true,
       });
       const shareData = response.data.shareData;
@@ -81,7 +81,7 @@ const Home = () => {
   useEffect(() => {
     const fetchFoods = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/api/food/", {
+        const response = await axios.get("https://backend-zomato.onrender.com/api/food/", {
           withCredentials: true,
         });
 

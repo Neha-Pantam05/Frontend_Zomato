@@ -11,7 +11,7 @@ const Profile = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3000/api/foodPartner/${id}`, {
+      .get(`https://backend-zomato.onrender.com/api/foodPartner/${id}`, {
         withCredentials: true,
       })
       .then((response) => {

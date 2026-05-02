@@ -15,7 +15,7 @@ const FoodPartnerRegister = () => {
     const email = e.target.email.value;
     const password = e.target.password.value;
 
-    const respone = await axios.post("http://localhost:3000/api/auth/foodPartner/register", {
+    const respone = await axios.post("https://backend-zomato.onrender.com/foodPartner/register", {
       name,
       contactName,
       phone,

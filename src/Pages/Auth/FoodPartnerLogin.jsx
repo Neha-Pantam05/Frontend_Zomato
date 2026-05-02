@@ -13,7 +13,7 @@ const FoodPartnerLogin = () => {
     const password = e.target.password.value;
 
     // Make API call to login endpoint
-    const response = await axios.post("http://localhost:3000/api/auth/foodPartner/login", {
+    const response = await axios.post("https://backend-zomato.onrender.com/api/auth/foodPartner/login", {
       email: email,
       password: password
     },{

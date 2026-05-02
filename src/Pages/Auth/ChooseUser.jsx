@@ -4,8 +4,6 @@ import { Link } from "react-router-dom";
 
 const ChooseUser = () => {
 
-  
-
   return (
     <div className="min-h-screen flex items-center justify-center bg-linear-to-r from-pink-500 via-red-500 to-orange-400">
 
