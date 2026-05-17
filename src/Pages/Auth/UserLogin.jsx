@@ -22,7 +22,7 @@ const UserLogin = () => {
       },
     );
     console.log("User Logged In Successfully", response.data);
-    navigate("/");
+    navigate("/home");
   };
 
   return (
